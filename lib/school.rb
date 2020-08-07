@@ -18,8 +18,7 @@ class School
   end 
   
     def grade(grade_inputted)
-      @roster.filter do |grade, student|
-      grade == grade_inputted
+      @roster[grade_inputted]
       end
     end 
     
